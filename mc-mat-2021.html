@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 { 
+            margin-left:20px; 
+            color: black;
+        }
+        h1 a { color:black; }
+        .folder {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .exam {
+            margin: 10px 0;
+        }
+        .exam button {
+            margin-left: 10px;
+        }
+        button { 
+            margin-bottom:15px; 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html">< Back to home</a></h1>
+    <div class="folder" id="folder1">
+        <h2>MC 2021 Mathematics</h2>
+        
+        <div class="exam" id="exam1">
+            <button onclick="openRandomExam('examen1')">MC2021MAT - Download ▼</button>
+            <br><br><br>
+        </div>
+       
+        <div class="exam" id="exam2">
+            <button onclick="openRandomExam('examen2')">MC2021MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210116MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210123MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210130MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210206MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210213MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210220MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210306MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210313MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210327MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20210424MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211023MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211030MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211106MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211112MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211204MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211205MAT - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211211MAT-1 - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211211MAT-2 - Download ▼</button>
+            <button onclick="openRandomExam('examen2')">MC20211211MAT - Download ▼</button>
+
+        </div>
+        
+    </div>
+
+    <script>
+        function openRandomExam(exam) {
+            // Selecciona aleatoriamente un número entre 1 y 3
+            const randomVersion = Math.floor(Math.random() * 3) + 1;
+            // Ruta actualizada para los exámenes en 'examenes/2025' (trabajando localmente)
+            const filePath = `examenes/2021/${exam}_version${randomVersion}.pdf`;
+            
+            // Abre el PDF en una nueva pestaña del navegador
+            window.open(filePath, '_blank');
+        }
+    </script>
+</body>
+</html>
