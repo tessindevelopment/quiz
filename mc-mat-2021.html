@@ -28,54 +28,38 @@
             margin-bottom:15px; 
             display: block;
         }
+        a { display:block; margin-bottom:10px; color: #464646; }
     </style>
 </head>
 <body>
     <h1><a href="index.html">< Back to home</a></h1>
     <div class="folder" id="folder1">
-        <h2>MC 2021 Mathematics</h2>
-        
-        <div class="exam" id="exam1">
-            <button onclick="openRandomExam('examen1')">MC2021MAT - Download ▼</button>
-            <br><br><br>
-        </div>
+        <h2>MC 2021 Mat</h2>
        
         <div class="exam" id="exam2">
-            <button onclick="openRandomExam('examen2')">MC2021MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210116MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210123MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210130MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210206MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210213MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210220MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210306MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210313MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210327MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20210424MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211023MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211030MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211106MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211112MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211204MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211205MAT - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211211MAT-1 - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211211MAT-2 - Download ▼</button>
-            <button onclick="openRandomExam('examen2')">MC20211211MAT - Download ▼</button>
-
+           <a href="quiz/MC/MAT/2021/MC2021MAT-1.pdf" target="_blank">MC2021MAT-1 - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC2021MAT-2.pdf" target="_blank">MC2021MAT-2 - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210116MAT.pdf" target="_blank">MC20210116MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210123MAT.pdf" target="_blank">MC20210123MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210130MAT.pdf" target="_blank">MC20210130MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210206MAT.pdf" target="_blank">MC20210206MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210213MAT.pdf" target="_blank">MC20210213MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210220MAT.pdf" target="_blank">MC20210220MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210306MAT.pdf" target="_blank">MC20210306MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210313MAT.pdf" target="_blank">MC20210313MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210327MAT.pdf" target="_blank">MC20210327MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20210424MAT.pdf" target="_blank">MC20210424MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211023MAT.pdf" target="_blank">MC20211023MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211030MAT.pdf" target="_blank">MC20211030MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211106MAT.pdf" target="_blank">MC20211106MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211112MAT.pdf" target="_blank">MC20211112MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211204MAT.pdf" target="_blank">MC20211204MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211205MAT.pdf" target="_blank">MC20211205MAT - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211211MAT-1.pdf" target="_blank">MC20211211MAT-1 - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211211MAT-2.pdf" target="_blank">MC20211211MAT-2 - Download ▼</a>
+           <a href="quiz/MC/MAT/2021/MC20211211MAT.pdf" target="_blank">MC20211211MAT - Download ▼</a>
         </div>
         
     </div>
-
-    <script>
-        function openRandomExam(exam) {
-            // Selecciona aleatoriamente un número entre 1 y 3
-            const randomVersion = Math.floor(Math.random() * 3) + 1;
-            // Ruta actualizada para los exámenes en 'examenes/2025' (trabajando localmente)
-            const filePath = `examenes/2021/${exam}_version${randomVersion}.pdf`;
-            
-            // Abre el PDF en una nueva pestaña del navegador
-            window.open(filePath, '_blank');
-        }
-    </script>
 </body>
 </html>
